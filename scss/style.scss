@@ -1,0 +1,189 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+//@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/input-groups";
+
+// Components
+//@import "bootstrap/component-animations";
+//@import "bootstrap/dropdowns";
+//@import "bootstrap/button-groups";
+//@import "bootstrap/input-groups";
+//@import "bootstrap/navs";
+//@import "bootstrap/navbar";
+//@import "bootstrap/breadcrumbs";
+//@import "bootstrap/pagination";
+//@import "bootstrap/pager";
+//@import "bootstrap/labels";
+//@import "bootstrap/badges";
+//@import "bootstrap/jumbotron";
+//@import "bootstrap/thumbnails";
+//@import "bootstrap/alerts";
+//@import "bootstrap/progress-bars";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/panels";
+//@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+//@import "bootstrap/close";
+
+// Components w/ JavaScript
+//@import "bootstrap/modals";
+//@import "bootstrap/tooltip";
+//@import "bootstrap/popovers";
+//@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+
+
+body {
+	position: relative;
+.slider {
+	position:fixed;
+	right: 20px;
+	top:50px;
+	ul{
+		li {
+			list-style: none;
+			margin: 15px 0;
+			a {
+		display:block;
+		width:10px;
+		height:10px;
+		border-radius: 10px;
+		background:#e2e2e2
+	}
+		}
+	}
+}
+
+header {
+	background: url(../img/bg-1.png) no-repeat  fixed left center;
+	background-size: cover;
+	width:100%;
+	.header-wrap {
+		text-align: center;
+		padding:8% 0;
+		.logo {
+		display: inline-block;
+		background: url(../img/logo.png) no-repeat top center;
+		width: 100%;
+		background-size:contain;
+		height: 135px;
+		margin-top: 20px; 
+	} 
+	}
+	h1{color: #fff;}
+	p{color: #fff;font-size: 1.2em;}
+	img {
+		width:50%;
+	}
+	}
+.appStore {
+		background:url(../img/btn-app-store.png) no-repeat #d9534f 0 50%;
+		padding:4% 11%;
+		background-size:contain;
+		margin-top:15px;}
+.icon-block {padding:8% 0;}
+.grey-block {
+	background:#f3f4f5;
+	padding:8% 0;
+	img {width:30%;}
+	.grey-wrap {margin-top:30px;}
+	.btn-nobg {
+		border-color: #dc554f;
+    	color: #dc554f;
+    	background:transparent;
+    	&:hover {
+    		    background: #dc554f;
+    			color: white;
+    	}
+	}
+}
+.subscribe {
+	background:url(../img/bg-2.png) no-repeat fixed left center;
+	background-size: cover;
+	width:100%;
+	padding:8% 0;
+	.subscribe-wrap{
+		text-align:center;
+		color:#fff;
+		form {
+		.form-group {
+			display:inline-block;
+			vertical-align: top;
+			.form-control {
+				display:inline-block;
+				width:100%;
+				font-size:18px;
+				padding:18px 12px;
+			}
+			}
+		button {
+			background: #00b6ad;
+			color:#fff;
+			font-size:18px;
+			margin-bottom:20px;
+			}
+		}
+	}
+	
+}
+footer {
+	padding:8% 0;
+	color:#696f6f;
+}
+.glyphicon-heart {
+	color:pink;
+}
+}
+/*sign-in page*/
+.sign-wrap {
+	background:url(../img/bg-1.png) no-repeat  fixed left center;
+	padding:8% 0;
+	img {padding-bottom: 5%;}
+	form {
+		background:#fff;
+		border-radius: 4px;
+    	margin:0 0 20px 0;
+    	padding: 15px;
+    	h3 {text-align:center;margin-bottom: 20px;}
+    	input {
+    		margin-bottom:20px;
+    		height:45px;
+    		padding:6px 12px;
+    		color: #696f6f;
+    		font-size:18px;
+    		border: 2px solid #cccccc;
+    		&:focus {
+    			    border-color: #00b6ad;
+    		}
+    	}
+    	button {
+    		background:#00b6ad;
+    		padding:10px 23px;
+    		margin-bottom:20px;
+    		font-size:18px;
+    	}
+    	input[type="checkbox"] {
+    		top:-17px;
+    	}
+	}
+	.desc {color:#fff;}
+}
